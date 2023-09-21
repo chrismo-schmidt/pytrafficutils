@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytrafficutils"
+description = "Useful functions for the analysis and simulation of road traffic."
+readme = "README.md"
+version = "1.0.0"
+license = {file = "LICENSE"}
+authors = [
+	{name = "Christoph M. Schmidt", email = "c.m.schmidt@tudelft.nl"}
+]
+requires-python = ">3.9"
+dependencies = [
+	"numpy",
+]
+	
+[tool.setuptools.packages.find]
+where = ["src"]  
